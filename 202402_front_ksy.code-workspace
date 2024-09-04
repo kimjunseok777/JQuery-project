@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../202402_front_ksy"
+	},
+	{
+		"path": "../my-project"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "my-project"
+  }
+}

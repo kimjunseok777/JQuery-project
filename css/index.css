@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'title1';
+    src: url(../font/FontsFree-Net-Miedinger-W01-Bold.ttf);
+}
+@font-face {
+    font-family: 'title2';
+    src: url(../font/PretendardVariable.ttf);
+}
+
+/* .startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+} */
+
+#section01{
+    background: #000000;
+    width: 100vw;
+    height: 980px;
+    font-family: 'title1';
+    color: #fff;
+}
+/*================ 게이지 모양&틀 =============*/
+#section01 .gage_white {
+    width: 1791px;
+    height: 151px;
+    overflow: hidden;
+    background-color: white;
+    left: 64px;
+    bottom: 79px;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 8s;
+}
+#section01 .gage_white.on {
+    transform: translateX(0);
+}
+
+#section01 .gage_shape {
+    left: 0;
+    top: 488px;
+    position: absolute;
+}
+#section01 .gage_outline {
+    left: 64px;
+    top: 749px;
+    position: absolute;
+    width: 1792px;
+    height: 152px;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+}
+#section01 .gage_outline.on {
+    clip-path: inset(0 0% 0 0);
+    opacity: 1;
+}
+/*================ 배경 형태조합 =============*/
+#section01 .top_line {
+    left: 23px;
+    top: 11px;
+    position: absolute;
+    width: 1872px;
+    height: 39px;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    clip-path: inset(0 100% 0 0);
+}
+#section01 .top_line.on {
+    clip-path: inset(0 0% 0 0);
+}
+
+#section01 .top_typo {
+    left: 1671px;
+    top: 23px;
+    position: absolute;
+}
+#section01 .top_typo > img {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .top_typo.on > img {
+    opacity: 1;
+}
+
+#section01 .mid_line {
+    left: 23px;
+    top: 685px;
+    position: absolute;
+    width: 1873px;
+    height: 39px;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    clip-path: inset(0 100% 0 0);
+}
+#section01 .mid_line.on {
+    clip-path: inset(0 0% 0 0);
+}
+
+#section01 .mid_typo1 {
+    left: 46px;
+    top: 697px;
+    position: absolute;
+}
+#section01 .mid_typo1 > img {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .mid_typo1.on > img {
+    opacity: 1;
+}
+
+#section01 .mid_typo2 {
+    left: 1585px;
+    top: 697px;
+    position: absolute;
+}
+#section01 .mid_typo2 > img {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .mid_typo2.on > img {
+    opacity: 1;
+}
+
+#section01 .bottom_line {
+    left: 23px;
+    top: 949px;
+    position: absolute;
+    width: 1874px;
+    height: 1px;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    clip-path: inset(0 100% 0 0);
+}
+#section01 .bottom_line.on {
+    clip-path: inset(0 0% 0 0);
+}
+
+#section01 .circle_logo {
+    left: 74px;
+    top: 97px;
+    position: absolute;
+}
+#section01 .circle_logo > img {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .circle_logo.on > img {
+    opacity: 1;
+}
+
+#section01 .circle_typo {
+    left: 44px;
+    top: 60px;
+    position: absolute;
+    animation: logo 5s linear infinite;
+}
+@keyframes logo {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#section01 .circle_typo > img {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .circle_typo.on > img {
+    opacity: 1;
+}
+
+/* ===================== 폰트 게이지 구동 ========================= */
+#section01 .title1_1 {
+    left: 283px;
+    top: 75px;
+    position: absolute;
+    font-size: 54px;
+}
+#section01 .title1_2 {
+    left: 284px;
+    top: 135px;
+    position: absolute;
+    font-size: 54px;
+}
+
+
+
+#section01 .title2 > div {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'title2';
+    color: #fff;
+    opacity: 0.8;
+}
+
+#section01 .title2_1 {
+    left: 288px;
+    top: 287px;
+}
+#section01 .title2_2 {
+    left: 288px;
+    top: 321px;
+}
+#section01 .title2_3 {
+    left: 288px;
+    top: 355px;
+}
+#section01 .title2_4 {
+    left: 288px;
+    top: 389px;
+}
+
+
+#section01 .nemo {
+    left: 288px;
+    top: 234px;
+    position: absolute;
+    animation: nemo .8s linear infinite;
+}
+@keyframes nemo {
+    100% {
+        z-index: -1;
+    }
+}
+
+/* #section01 .count {
+    left: 859px;
+    top: 182px;
+    position: absolute;
+    font-size: 400px;
+} */
+#section01 .count {
+    left: 1059px;
+    top: 172px;
+    position: absolute;
+    font-size: 400px;
+}
+
+
+
+
+
+
+
+
+
+/* #section02{
+    background: dodgerblue;
+}
+
+#section03{
+    background: gray;
+}
+
+#section04{
+    background: hotpink;
+}
+#section05{
+    background: aqua;
+} */
+
+
+
+
+
+
+
+
+
+

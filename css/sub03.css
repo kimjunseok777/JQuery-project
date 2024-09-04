@@ -1,0 +1,1623 @@
+#cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999999;
+    pointer-events: none;
+    opacity: 0;
+}
+#cursor.on {
+    opacity: 1;
+}
+
+/*=========================================*/
+.startPoint{
+    width: 108px;
+    height: 108px;
+    border-radius: 76px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: #0a0a0a;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.startPoint:hover {
+    transform: scale(1.2);
+    transition: all .6s;
+}
+.startPoint:hover .re_typo2 {
+    opacity: .7;
+}
+
+.startPoint .re_image {
+    left: 0px;
+    top: 0;
+    position: absolute;
+    border-radius: 76px;
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+}
+.startPoint .re_image > img {
+    animation: re_image .8s infinite alternate;
+}
+@keyframes re_image {
+    100% {
+        transform: scale(1.1);
+    }
+}
+.startPoint .re_typo {
+    left: -19px;
+    top: -18px;
+    position: absolute;
+    animation: re_typo 9s linear infinite;
+    width: 145px;
+    height: 144px;
+}
+.startPoint .re_typo > div {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.startPoint .re_typo2 {
+    opacity: .1;
+    transition: all .6s;
+}
+@keyframes re_typo {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.startPoint .re_arrow {
+    left: 25px;
+    top: 24px;
+    position: absolute;
+    width: 57px;
+    height: 56px;
+    overflow: hidden;
+}
+.startPoint .re_arrow > img {
+    transition: all .8s;
+    opacity: 0;
+}
+.startPoint:hover .re_arrow > img {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+/*=========================================*/
+
+#section01{
+    /* background: orange; */
+    height: 1050vh;
+    /* color: #fff; */
+}
+#section01 .trigger-this-01 {
+    height: 100%;
+}
+#section01 .fix-this-01 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #000;
+}
+#section01 .inner {
+    width: 200vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#section01 .inner > div {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#section01 .section01_1 .background_before {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#section01 .section01_1 .background {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#section01 .section01_1 .background > img {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .section01_1 .background.on > img {
+    opacity: 1;
+}
+
+#section01 .section01_1 .gnb1 {
+    width: 47px;
+    top: 48px;
+    left: 57px;
+    top: 36px;
+    position: absolute;
+}
+#section01 .gnb1 > img {
+    transform: translateY(30%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .gnb1.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .gnb2 {
+    left: 118px;
+    top: 50px;
+    position: absolute;
+}
+#section01 .gnb2 > img {
+    transform: translateY(80%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .gnb2.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .gnb3 {
+    right: 349px;
+    top: 49px;
+    position: absolute;
+}
+#section01 .gnb3 > img {
+    transform: translateY(80%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .gnb3.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .gnb4 {
+    right: 257px;
+    top: 49px;
+    position: absolute;
+}
+#section01 .gnb4 > img {
+    transform: translateY(80%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .gnb4.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .gnb5 {
+    right: 165px;
+    top: 47px;
+    position: absolute;
+}
+#section01 .gnb5 > img {
+    transform: translateY(80%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .gnb5.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .gnb_line {
+    width: 1828px;
+    height: 1px;
+    overflow: hidden;
+    right: 46px;
+    top: 115px;
+    position: absolute;
+}
+#section01 .section01_1 .gnb_line > img {
+    transform: translateX(-100%);
+    transition: all .6s;
+}
+#section01 .section01_1 .gnb_line.on > img {
+    transform: translateX(0);
+}
+
+#section01 .gnb_menu {
+    right: 57px;
+    top: 36px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 26px;
+}
+#section01 .gnb_menu:hover {
+    transform: scale(1.3);
+    transition: all .4s;
+}
+#section01 .gnb_menu:hover .arrow {
+    transform: translateX(74%);
+    transition: all .4s;
+}
+
+#section01 .light {
+    left: -28px;
+    top: -28px;
+    position: absolute;
+}
+#section01 .light > img {
+    scale: 0%;
+    transition: all 1s;
+}
+#section01 .light.on > img {
+    scale: 100%;
+}
+
+#section01 .circle {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+#section01 .circle > img {
+    scale: 0%;
+    transition: all 1s;
+}
+#section01 .circle.on > img {
+    scale: 100%;
+}
+
+#section01 .arrow {
+    right: 13px;
+    top: 19px;
+    position: absolute;
+}
+#section01 .arrow > img {
+    transform: translateX(-100%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .arrow.on > img {
+    transform: translateX(0%);
+    opacity: 1;
+}
+/*---------------------------------------*/
+#section01 .section01_1 .title1 {
+    width: 148px;
+    height: 129px;
+    overflow: hidden;
+    left: 565px;
+    top: 516px;
+    position: absolute;
+}
+#section01 .section01_1 .title1 > img {
+    transform: translateY(102%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title1.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title2 {
+    width: 181px;
+    height: 129px;
+    overflow: hidden;
+    left: 717px;
+    top: 516px;
+    position: absolute;
+}
+#section01 .section01_1 .title2 > img {
+    transform: translateY(102%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title2.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title3 {
+    width: 145px;
+    height: 129px;
+    overflow: hidden;
+    left: 902px;
+    top: 516px;
+    position: absolute;
+}
+#section01 .section01_1 .title3 > img {
+    transform: translateY(102%);
+    transition: all .9s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title3.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title4 {
+    width: 137px;
+    height: 129px;
+    overflow: hidden;
+    left: 1061px;
+    top: 516px;
+    position: absolute;
+}
+#section01 .section01_1 .title4 > img {
+    transform: translateY(102%);
+    transition: all 1s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title4.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title5 {
+    width: 148px;
+    height: 129px;
+    overflow: hidden;
+    left: 1210px;
+    top: 516px;
+    position: absolute;
+}
+#section01 .section01_1 .title5 > img {
+    transform: translateY(102%);
+    transition: all 1.5s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title5.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title_cover {
+    left: 545px;
+    top: 501px;
+    position: absolute;
+}
+#section01 .section01_1 .title_cover > img {
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .section01_1 .title_cover.on > img {
+    opacity: 1;
+}
+
+/*---------------------------------------*/
+#section01 .section01_1 .title_1 {
+    width: 479px;
+    height: 44px;
+    overflow: hidden;
+    left: 739px;
+    top: 440px;
+    position: absolute;
+}
+#section01 .section01_1 .title_1 > img {
+    transform: translateY(102%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title_1.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title_2 {
+    width: 644px;
+    height: 18px;
+    overflow: hidden;
+    left: 638px;
+    top: 670px;
+    position: absolute;
+}
+#section01 .section01_1 .title_2 > img {
+    transform: translateY(102%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title_2.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_1 .title_3 {
+    width: 380px;
+    height: 18px;
+    overflow: hidden;
+    left: 770px;
+    top: 700px;
+    position: absolute;
+}
+#section01 .section01_1 .title_3 > img {
+    transform: translateY(102%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .title_3.on > img {
+    transform: translateY(0);
+}
+
+/*---------------------------------------*/
+#section01 .section01_1 .circle_shape {
+    left: 55px;
+    top: 159px;
+    position: absolute;
+    animation: circle_shape 5s linear infinite;
+}
+#section01 .section01_1 .circle_shape > img {
+    opacity: 0;
+    transition: all 1s;
+}
+#section01 .section01_1 .circle_shape.on > img {
+    opacity: 1;
+}
+@keyframes circle_shape {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#section01 .section01_1 .circle_triangle {
+    left: 81px;
+    top: 184px;
+    position: absolute;
+}
+#section01 .section01_1 .circle_triangle > img {
+    opacity: 0;
+    transition: all 1s;
+}
+#section01 .section01_1 .circle_triangle.on > img {
+    opacity: 1;
+}
+
+#section01 .section01_1 .top_typo1 {
+    width: 132px;
+    height: 13px;
+    left: 149px;
+    top: 157px;
+    position: absolute;
+}
+#section01 .section01_1 .top_typo1 > img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .top_typo1.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .top_typo2 {
+    width: 180px;
+    height: 13px;
+    left: 161px;
+    top: 179px;
+    position: absolute;
+}
+#section01 .section01_1 .top_typo2 > img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .top_typo2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+/*---------------------------------------*/
+#section01 .section01_1 .bottom_typo1 {
+    width: 309px;
+    height: 16px;
+    left: 45px;
+    top: 846px;
+    position: absolute;
+}
+#section01 .section01_1 .bottom_typo1 > img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .bottom_typo1.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .bottom_typo2 {
+    width: 339px;
+    height: 16px;
+    left: 45px;
+    top: 883px;
+    position: absolute;
+}
+#section01 .section01_1 .bottom_typo2 > img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .bottom_typo2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .section01_1 .bottom_typo3 {
+    width: 258px;
+    height: 16px;
+    left: 45px;
+    top: 920px;
+    position: absolute;
+}
+#section01 .section01_1 .bottom_typo3 > img {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_1 .bottom_typo3.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+/*---------------------------------------*/
+
+
+
+
+
+
+
+#section01 .x_scroll {
+    width: 400vw;
+    height: 769px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -335px;
+    transform: translate(23%, 170%);
+    /* background-color: orange; */
+    display: flex;
+}
+#section01 .x_scroll > div {
+    width: 1265px;
+    height: 769px;
+    /* background-color: gray; */
+    margin-right: 44px;
+    position: relative;
+}
+#section01 .x_scroll .x04 {
+    margin-right: 0;
+}
+
+/*------------------ 01 ---------------------*/
+#section01 .x_scroll .x01 .background1_shape {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+#section01 .x_scroll .x01 .background1 {
+    width: 1264px;
+    height: 768px;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 7px;
+}
+#section01 .x_scroll .x01 .background1 > img {
+    transition: all .7s;
+}
+#section01 .x_scroll .x01:hover .background1 > img {
+    transform: scale(1.1);
+}
+
+
+#section01 .x_scroll .x01 .tit1 {
+    left: 617px;
+    top: 178px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tit1 > img {
+    opacity: 0;
+    transition: all .4s;
+}
+#section01 .x_scroll .x01 .tit1.on > img {
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .tit2 {
+    left: 521px;
+    top: 225px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tit2 > img {
+    transform: translateX(-40%);
+    transition: all .4s .1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .tit2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .tit3 {
+    left: 375px;
+    top: 261px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tit3 > img {
+    transform: translateX(-40%);
+    transition: all .4s .2s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .tit3.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .tp1 {
+    left: 420px;
+    top: 350px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tp1 > img {
+    transform: translateY(100%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .tp1.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .tp2 {
+    left: 234px;
+    top: 377px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tp2 > img {
+    transform: translateY(100%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .tp2.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .tp3 {
+    left: 311px;
+    top: 404px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tp3 > img {
+    transform: translateY(100%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .tp3.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .tp4 {
+    left: 434px;
+    top: 431px;
+    position: absolute;
+}
+#section01 .x_scroll .x01 .tp4 > img {
+    transform: translateY(100%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .tp4.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x01 .x01_btn {
+    left: 530px;
+    top: 514px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .x_scroll .x01 .x01_btn.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+#section01 .x_scroll .x01 .x01_btn > div {
+    position: absolute;
+    left: 0;  
+    top: 0;
+}
+#section01 .x_scroll .x01 .x01_btn .on_button {
+    left: -10px;
+    top: -11px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .6s;
+}
+#section01 .x_scroll .x01:hover .on_button {
+    opacity: 1;
+    z-index: 999;
+}
+/* #section01 .x_scroll .x01 .off {
+    left: 530px;
+    top: 514px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+}
+#section01 .x_scroll .x01 .off > img {
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .off.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x01 .on_button {
+    left: 520px;
+    top: 503px;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: all .35s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .on_button > img {
+    transform: translateY(100%);
+    transition: all .35s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x01 .on_button.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x01:hover .on_button.on > img {
+    z-index: 999;
+} */
+
+
+/*------------------ 02 ---------------------*/
+#section01 .x_scroll .x02 .background2_shape {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+#section01 .x_scroll .x02 .background2 {
+    width: 1264px;
+    height: 768px;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 7px;
+}
+#section01 .x_scroll .x02 .background2 > img {
+    transition: all .7s;
+}
+#section01 .x_scroll .x02:hover .background2 > img {
+    transform: scale(1.1);
+}
+
+#section01 .x_scroll .x02 .tit1 {
+    left: 617px;
+    top: 158px;
+    position: absolute;
+}
+#section01 .x_scroll .x02 .tit1 > img {
+    opacity: 0;
+    transition: all .4s;
+}
+#section01 .x_scroll .x02 .tit1.on > img {
+    opacity: 1;
+}
+
+#section01 .x_scroll .x02 .tit2 {
+    left: 521px;
+    top: 205px;
+    position: absolute;
+}
+#section01 .x_scroll .x02 .tit2 > img {
+    transform: translateX(-40%);
+    transition: all .4s .1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tit2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x02 .tit3 {
+    left: 382px;
+    top: 241px;
+    position: absolute;
+}
+#section01 .x_scroll .x02 .tit3 > img {
+    transform: translateX(-40%);
+    transition: all .4s .2s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tit3.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x02 .tp1 {
+    left: 298px;
+    top: 330px;
+    position: absolute;
+    width: 670px;
+    height: 20px;
+}
+#section01 .x_scroll .x02 .tp1 > img {
+    transform: translateY(100%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tp1.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x02 .tp2 {
+    left: 247px;
+    top: 357px;
+    position: absolute;
+    width: 771px;
+    height: 20px;
+}
+#section01 .x_scroll .x02 .tp2 > img {
+    transform: translateY(100%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tp2.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x02 .tp3 {
+    left: 415px;
+    top: 384px;
+    position: absolute;
+    width: 436px;
+    height: 20px;
+}
+#section01 .x_scroll .x02 .tp3 > img {
+    transform: translateY(100%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tp3.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x02 .tp4 {
+    left: 324px;
+    top: 425px;
+    position: absolute;
+    width: 618px;
+    height: 20px;
+}
+#section01 .x_scroll .x02 .tp4 > img {
+    transform: translateY(100%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tp4.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x02 .tp5 {
+    left: 233px;
+    top: 452px;
+    position: absolute;
+    width: 799px;
+    height: 20px;
+}
+#section01 .x_scroll .x02 .tp5 > img {
+    transform: translateY(100%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tp5.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x02 .tp6 {
+    left: 315px;
+    top: 479px;
+    position: absolute;
+    width: 636px;
+    height: 20px;
+}
+#section01 .x_scroll .x02 .tp6 > img {
+    transform: translateY(100%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .tp6.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section01 .x_scroll .x02 .x02_btn {
+    left: 530px;
+    top: 561px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .x_scroll .x02 .x02_btn.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+#section01 .x_scroll .x02 .x02_btn > div {
+    position: absolute;
+    left: 0;  
+    top: 0;
+}
+#section01 .x_scroll .x02 .x02_btn .on_button {
+    left: -10px;
+    top: -11px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .6s;
+}
+#section01 .x_scroll .x02:hover .on_button {
+    opacity: 1;
+    z-index: 999;
+}
+/* #section01 .x_scroll .x02 .off {
+    left: 530px;
+    top: 561px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+}
+#section01 .x_scroll .x02 .off > img {
+    transform: translateY(100%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x02 .off.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x02 .on_button {
+    left: 520px;
+    top: 550px;
+    position: absolute;
+} */
+
+
+/*------------------- 03 --------------------*/
+#section01 .x_scroll .x03 .background3_shape {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+#section01 .x_scroll .x03 .background3 {
+    width: 1264px;
+    height: 768px;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 7px;
+}
+#section01 .x_scroll .x03 .background3 > img {
+    transition: all .7s;
+}
+#section01 .x_scroll .x03:hover .background3 > img {
+    transform: scale(1.1);
+}
+
+
+#section01 .x_scroll .x03 .tit1 {
+    left: 617px;
+    top: 158px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .tit1 > img {
+    opacity: 0;
+    transition: all .4s;
+}
+#section01 .x_scroll .x03 .tit1.on > img {
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .tit2 {
+    left: 521px;
+    top: 205px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .tit2 > img {
+    transform: translateX(-40%);
+    transition: all .4s .1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .tit2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .tit3 {
+    left: 426px;
+    top: 241px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .tit3 > img {
+    transform: translateX(-40%);
+    transition: all .4s .2s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .tit3.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+/*-------- list 1 ---------*/
+#section01 .x_scroll .x03 .list1 {
+    left: 335px;
+    top: 331px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list1 > img {
+    transform: translateX(-40%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list1.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list2 {
+    left: 335px;
+    top: 372px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list2 > img {
+    transform: translateX(-40%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list3 {
+    left: 335px;
+    top: 417px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list3 > img {
+    transform: translateX(-40%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list3.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list4 {
+    left: 335px;
+    top: 463px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list4 > img {
+    transform: translateX(-40%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list4.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list5 {
+    left: 335px;
+    top: 507px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list5 > img {
+    transform: translateX(-40%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list5.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*-------- list 2 ---------*/
+#section01 .x_scroll .x03 .list6 {
+    left: 564px;
+    top: 327px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list6 > img {
+    transform: translateX(-40%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list6.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list7 {
+    left: 564px;
+    top: 372px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list7 > img {
+    transform: translateX(-40%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list7.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list8 {
+    left: 564px;
+    top: 417px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list8 > img {
+    transform: translateX(-40%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list8.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list9 {
+    left: 564px;
+    top: 463px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list9 > img {
+    transform: translateX(-40%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list9.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list10 {
+    left: 564px;
+    top: 507px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list10 > img {
+    transform: translateX(-40%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list10.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*-------- list 3 ---------*/
+#section01 .x_scroll .x03 .list11 {
+    left: 793px;
+    top: 327px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list11 > img {
+    transform: translateX(-40%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list11.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list12 {
+    left: 793px;
+    top: 372px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list12 > img {
+    transform: translateX(-40%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list12.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list13 {
+    left: 793px;
+    top: 417px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list13 > img {
+    transform: translateX(-40%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list13.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x03 .list14 {
+    left: 793px;
+    top: 462px;
+    position: absolute;
+}
+#section01 .x_scroll .x03 .list14 > img {
+    transform: translateX(-40%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .list14.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*--------- list end --------*/
+
+#section01 .x_scroll .x03 .x03_btn {
+    left: 530px;
+    top: 589px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .x_scroll .x03 .x03_btn.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+#section01 .x_scroll .x03 .x03_btn > div {
+    position: absolute;
+    left: 0;  
+    top: 0;
+}
+#section01 .x_scroll .x03 .x03_btn .on_button {
+    left: -10px;
+    top: -11px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .6s;
+}
+#section01 .x_scroll .x03:hover .on_button {
+    opacity: 1;
+    z-index: 999;
+}
+/* #section01 .x_scroll .x03 .off {
+    left: 530px;
+    top: 589px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+}
+#section01 .x_scroll .x03 .off > img {
+    transform: translateY(100%);
+    transition: all .4s .8s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x03 .off.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#section01 .x_scroll .x03 .on_button {
+    left: 520px;
+    top: 578px;
+    position: absolute;
+} */
+
+
+/*---------------- 04 -----------------------*/
+#section01 .x_scroll .x04 .background4_shape {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+#section01 .x_scroll .x04 .background4 {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 1264px;
+    height: 768px;
+    overflow: hidden;
+}
+#section01 .x_scroll .x04 .background4 > img {
+    transition: all .7s;
+}
+#section01 .x_scroll .x04:hover .background4 > img {
+    transform: scale(1.1);
+}
+
+#section01 .x_scroll .x04 .tit1 {
+    left: 617px;
+    top: 148px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .tit1 > img {
+    opacity: 0;
+    transition: all .4s;
+}
+#section01 .x_scroll .x04 .tit1.on > img {
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .tit2 {
+    left: 521px;
+    top: 195px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .tit2 > img {
+    transform: translateX(-40%);
+    transition: all .4s .1s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .tit2.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .tit3 {
+    left: 440px;
+    top: 231px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .tit3 > img {
+    transform: translateX(-40%);
+    transition: all .4s .2s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .tit3.on > img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .tp1 {
+    left: 267px;
+    top: 320px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .tp1 > img {
+    transform: translateY(100%);
+    transition: all .4s .3s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .tp1.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .tp2 {
+    left: 207px;
+    top: 347px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .tp2 > img {
+    transform: translateY(100%);
+    transition: all .4s .4s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .tp2.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .tp3 {
+    left: 317px;
+    top: 374px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .tp3 > img {
+    transform: translateY(100%);
+    transition: all .4s .5s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .tp3.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section01 .x_scroll .x04 .logo1 {
+    left: 529px;
+    top: 436px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .logo1 > img {
+    transform: translateY(100%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .logo1.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .logo1_name {
+    left: 510px;
+    top: 518px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .logo1_name > img {
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .logo1_name.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .logo2 {
+    left: 685px;
+    top: 436px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .logo2 > img {
+    transform: translateY(100%);
+    transition: all .4s .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .logo2.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .logo2_name {
+    left: 668px;
+    top: 518px;
+    position: absolute;
+}
+#section01 .x_scroll .x04 .logo2_name > img {
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .logo2_name.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section01 .x_scroll .x04 .x04_btn {
+    left: 530px;
+    top: 595px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .4s .7s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .x_scroll .x04 .x04_btn.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+#section01 .x_scroll .x04 .x04_btn > div {
+    position: absolute;
+    left: 0;  
+    top: 0;
+}
+#section01 .x_scroll .x04 .x04_btn .on_button {
+    left: -10px;
+    top: -11px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .6s;
+}
+#section01 .x_scroll .x04:hover .on_button {
+    opacity: 1;
+    z-index: 999;
+}
+/* #section01 .x_scroll .x04 .off {
+    left: 530px;
+    top: 595px;
+    position: absolute;
+    width: 184px;
+    height: 34px;
+}
+#section01 .x_scroll .x04 .off > img {
+    transform: translateY(100%);
+    transition: all .4s .8s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .x_scroll .x04 .off.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .x_scroll .x04 .on_button {
+    left: 520px;
+    top: 584px;
+    position: absolute;
+} */
+
+/*---------------------------------------*/
+
+#section01 .section01_2 {
+    background: url(../img/micro4/micro4_6/background.jpg);
+}
+
+#section01 .section01_2 > a {
+    width: 100vw;
+    height: 980px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+#section01 .section01_2 .last_typo1 {
+    left: 694px;
+    top: 414px;
+    position: absolute;
+    width: 531px;
+    height: 76px;
+    animation: last1 .7s linear infinite alternate;
+}
+#section01 .section01_2 .last_typo1 > img {
+    transform: translateY(100%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .section01_2 .last_typo1.on > img {
+    transform: translateY(0);
+    opacity: 1;
+}
+@keyframes last1 {
+    100% {
+        opacity: 0;
+    }
+}
+
+#section01 .section01_2 .last_typo2 {
+    left: 266px;
+    top: 521px;
+    position: absolute;
+    width: 1384px;
+    height: 81px;
+    overflow: hidden;
+}
+#section01 .section01_2 .last_typo2 > img {
+    transform: translateY(100%);
+    transition: all .6s .2s cubic-bezier(0.42, 0, 0.3, 0.91);
+}
+#section01 .section01_2 .last_typo2.on > img {
+    transform: translateY(0);
+}
+
+#section01 .section01_2 .last_typo3 {
+    left: 30px;
+    bottom: 29px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,818 @@
+
+
+
+
+/* .startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+} */
+
+#section01{
+    width: 100vw;
+    height: 100vh;
+    background: #171717;
+    /* background-color: #12c814; */
+}
+/*================= image ==============*/
+#section01 .img_group {
+    width: 800px;
+    height: 980px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transform: translateX(240%);
+    /* transition: all 1s; 처음 구동 속도1 */
+    transition: all 1s;
+    /* ---------------------------------------------------------------- */
+}
+#section01 .img_group.on {
+    transform: translateX(0);
+}
+#section01 .img_group > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#section01 .img_group .dimmed {
+    width: 100%;
+    height: 100vh;
+    background-color: #171717;
+    /* background-color: #12c814; */
+    /* background-color: black; */
+    z-index: 500;
+    /* transition: all .7s .4s; 처음 구동 속도2 */
+    transition: all .7s .3s;
+    /* ---------------------------------------------------------------- */
+}
+#section01 .img_group.on .dimmed {
+    transform: translateX(-100%);
+}
+#section01 .img_list > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+
+
+/*================= back & gnb ==============*/
+#section01 .background {
+    width: 1120px;
+    height: 980px;
+    left: 800px;
+    top: 0;
+    position: absolute;
+    transform: translateX(100%);
+    /* transition: all 1s .2s;  처음 구동 속도3 */
+    transition: all .8s .2s;
+    /* ---------------------------------------------------------------- */
+    overflow: hidden;
+}
+#section01 .background.on {
+    transform: translateX(0);
+}
+
+/*================= GNB ==============*/
+#section01 .gnb {
+    width: 191px;
+    height: 48px;
+    left: 872px;
+    top: 38px;
+    position: absolute;
+}
+#section01 .return1 {
+    width: 48px;
+    height: 48px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+#section01 .gnb:hover .return1 {
+    transform: scale(1.3);
+    transition: all .4s;
+}
+#section01 .gnb:hover .arrow {
+    transform: translateX(-74%);
+    transition: all .4s;
+}
+
+#section01 .light {
+    left: -28px;
+    top: -28px;
+    position: absolute;
+}
+#section01 .light > img {
+    scale: 0%;
+    transition: all 1s;
+}
+#section01 .light.on > img {
+    scale: 100%;
+}
+
+#section01 .circle {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+#section01 .circle > img {
+    scale: 0%;
+    transition: all 1s;
+}
+#section01 .circle.on > img {
+    scale: 100%;
+}
+
+#section01 .arrow {
+    left: 14px;
+    top: 19px;
+    position: absolute;
+}
+#section01 .arrow > img {
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+#section01 .arrow.on > img {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+#section01 .return2 {
+    transition: all .6s;
+    opacity: 0;
+}
+#section01 .return2.on {
+    opacity: 1;
+}
+
+#section01 .gnb:hover .return_off {
+    opacity: 0;
+    transition: all .6s;
+}
+#section01 .gnb:hover .return_on {
+    opacity: 1;
+    transition: all .6s;
+}
+
+#section01 .return_off {
+    left: -19px;
+    top: 14px;
+    position: absolute;
+}
+#section01 .return_on {
+    left: -19px;
+    top: 14px;
+    position: absolute;
+    opacity: 0;
+}
+/*================= GNB END ==============*/
+
+/*================= 메뉴 라인 형태조합 ==============*/
+#section01 .top_line {
+    left: 0;
+    top: 104px;
+    position: absolute;
+    width: 1120px;
+    height: 44px;
+    overflow: hidden;
+}
+#section01 .top_line > img {
+    clip-path: inset(0 100% 0 0);
+    transition: all .8s;
+}
+#section01 .top_line.on > img {
+    clip-path: inset(0 0 0 0);
+}
+
+#section01 .top_typo {
+    left: 230px;
+    top: 118px;
+    position: absolute;
+    width: 162px;
+    height: 17px;
+    overflow: hidden;
+}
+#section01 .top_typo > img {
+    opacity: 0;
+    transition: all .8s;
+}
+#section01 .top_typo.on > img {
+    opacity: 1;
+}
+
+#section01 .bottom_line {
+    left: 0;
+    top: 866px;
+    position: absolute;
+    width: 1120px;
+    height: 44px;
+    overflow: hidden;
+}
+#section01 .bottom_line > img {
+    clip-path: inset(0 100% 0 0);
+    transition: all .8s;
+}
+#section01 .bottom_line.on > img {
+    clip-path: inset(0 0 0 0);
+}
+
+#section01 .bottom_typo {
+    left: 614px;
+    top: 880px;
+    position: absolute;
+    width: 323px;
+    height: 17px;
+    overflow: hidden;
+}
+#section01 .bottom_typo > img {
+    opacity: 0;
+    transition: all .8s;
+}
+#section01 .bottom_typo.on > img {
+    opacity: 1;
+}
+
+/*================= menu1 ==============*/
+#section01 .menu1 {
+    width: 1120px;
+    height: 109px;
+    position: absolute;
+    left: 0;
+    top: 203px;
+    transform: translateX(30%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .menu1.on {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .menu1:hover .menu1_on {
+    height: 109px;
+}
+#section01 .menu1 .number {
+    left: 121px;
+    top: 56px;
+    position: absolute;
+    width: 62px;
+    height: 23px;
+    overflow: hidden;
+}
+
+#section01 .menu1 .typo1 {
+    left: 206px;
+    top: 29px;
+    position: absolute;
+    width: 221px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#section01 .menu1 .typo2 {
+    left: 453px;
+    top: 64px;
+    position: absolute;
+    width: 207px;
+    height: 15px;
+    overflow: hidden;
+}
+
+/*================= menu1 ON ==============*/
+#section01 .menu1_on {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 1120px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+#section01 .menu1_on .flow1 {
+    display: flex;
+    left: -1620px;
+    top: 29px;
+    position: absolute;
+}
+
+#section01 .menu1_on .flow {
+    width: 1560px;
+    height: 50px;
+    left: -133px;
+    top: 29px;
+    margin-right: 60px;
+    animation: flow1 9s linear infinite;
+}
+@keyframes flow1 {
+    100% {
+        transform: translateX(1620px);
+    }
+}
+#section01 .menu1_on .cir_triangle1 {
+    left: 309px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu1_on .cir_triangle2 {
+    left: 714px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu1_on .cir_triangle3 {
+    left: 1119px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu1_on .cir_triangle4 {
+    left: 1523px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu1_on .cir_typo1 {
+    left: 281px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu1_on .cir_typo2 {
+    left: 686px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu1_on .cir_typo3 {
+    left: 1091px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu1_on .cir_typo4 {
+    left: 1495px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+@keyframes cir_typo {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*================= menu2 ==============*/
+#section01 .menu2 {
+    width: 1120px;
+    height: 109px;
+    position: absolute;
+    left: 0px;
+    top: 328px;
+    transform: translateX(30%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .menu2.on {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .menu2:hover .menu2_on {
+    height: 109px;
+}
+
+#section01 .menu2 .number {
+    left: 121px;
+    top: 56px;
+    position: absolute;
+    width: 62px;
+    height: 23px;
+    overflow: hidden;
+}
+
+#section01 .menu2 .typo1 {
+    left: 206px;
+    top: 29px;
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#section01 .menu2 .typo2 {
+    left: 552px;
+    top: 64px;
+    position: absolute;
+    width: 147px;
+    height: 15px;
+    overflow: hidden;
+}
+
+/*================= menu2 ON ==============*/
+#section01 .menu2_on {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 1120px;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+}
+#section01 .menu2_on .flow2 {
+    display: flex;
+    left: -1451px;
+    top: 29px;
+    position: absolute;
+
+}
+#section01 .menu2_on .flow {
+    width: 1451px;
+    height: 50px;
+    left: -191px;
+    top: 29px;
+    margin-right: 60px;
+    animation: flow2 8s linear infinite;
+}
+@keyframes flow2 {
+    100% {
+        transform: translateX(1511px);
+    }
+}
+#section01 .menu2_on .cir_triangle1 {
+    left: 408px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu2_on .cir_triangle2 {
+    left: 911px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu2_on .cir_triangle3 {
+    left: 1414px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu2_on .cir_typo1 {
+    left: 380px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu2_on .cir_typo2 {
+    left: 883px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu2_on .cir_typo3 {
+    left: 1386px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+
+
+
+/*================= menu3 ==============*/
+#section01 .menu3 {
+    position: absolute;
+    width: 1120px;
+    height: 109px;
+    left: 0;
+    top: 453px;
+    transform: translateX(30%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .menu3.on {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .menu3:hover .menu3_on {
+    height: 109px;
+}
+#section01 .menu3 .number {
+    left: 121px;
+    top: 56px;
+    position: absolute;
+    width: 62px;
+    height: 23px;
+    overflow: hidden;
+}
+
+#section01 .menu3 .typo1 {
+    left: 206px;
+    top: 29px;
+    position: absolute;
+    width: 491px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#section01 .menu3 .typo2 {
+    left: 723px;
+    top: 64px;
+    position: absolute;
+    width: 253px;
+    height: 15px;
+    overflow: hidden;
+}
+
+/*================= menu3 ON ==============*/
+#section01 .menu3_on {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 1120px;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+}
+#section01 .menu3_on .flow3 {
+    display: flex;
+    left: -1351px;
+    top: 29px;
+    position: absolute;
+}
+#section01 .menu3_on .flow {
+    width: 1291px;
+    height: 50px;
+    left: -37px;
+    top: 29px;
+    margin-right: 60px;
+    animation: flow3 8s linear infinite;
+}
+@keyframes flow3 {
+    100% {
+        transform: translateX(1351px);
+    }
+}
+#section01 .menu3_on .cir_triangle1 {
+    left: 579px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu3_on .cir_triangle2 {
+    left: 1254px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu3_on .cir_typo1 {
+    left: 551px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu3_on .cir_typo2 {
+    left: 1226px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+
+
+/*================= menu4 ==============*/
+#section01 .menu4 {
+    position: absolute;
+    width: 1120px;
+    height: 109px;
+    left: 0;
+    top: 578px;
+    transform: translateX(30%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .menu4.on {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .menu4:hover .menu4_on {
+    height: 109px;
+}
+#section01 .menu4 .number {
+    left: 121px;
+    top: 56px;
+    position: absolute;
+    width: 62px;
+    height: 23px;
+    overflow: hidden;
+}
+
+#section01 .menu4 .typo1 {
+    left: 206px;
+    top: 29px;
+    position: absolute;
+    width: 501px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#section01 .menu4 .typo2 {
+    left: 733px;
+    top: 64px;
+    position: absolute;
+    width: 194px;
+    height: 15px;
+    overflow: hidden;
+}
+
+/*================= menu4 ON ==============*/
+#section01 .menu4_on {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 1120px;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+}
+#section01 .menu4_on .flow4 {
+    display: flex;
+    left: -1370px;
+    top: 29px;
+    position: absolute;
+}
+#section01 .menu4_on .flow {
+    width: 1310px;
+    height: 50px;
+    left: -38px;
+    top: 29px;
+    margin-right: 60px;
+    animation: flow4 8s linear infinite;
+}
+@keyframes flow4 {
+    100% {
+        transform: translateX(1370px);
+    }
+}
+#section01 .menu4_on .cir_triangle1 {
+    left: 589px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu4_on .cir_triangle2 {
+    left: 1273px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu4_on .cir_typo1 {
+    left: 561px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu4_on .cir_typo2 {
+    left: 1245px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+
+
+/*================= menu5 ==============*/
+#section01 .menu5 {
+    position: absolute;
+    width: 1120px;
+    height: 109px;
+    left: 0;
+    top: 703px;
+    transform: translateX(30%);
+    transition: all .6s cubic-bezier(0.42, 0, 0.3, 0.91);
+    opacity: 0;
+}
+#section01 .menu5.on {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .menu5:hover .menu5_on {
+    height: 109px;
+}
+#section01 .menu5 .number {
+    left: 121px;
+    top: 56px;
+    position: absolute;
+    width: 62px;
+    height: 23px;
+    overflow: hidden;
+}
+
+#section01 .menu5 .typo1 {
+    left: 206px;
+    top: 29px;
+    position: absolute;
+    width: 570px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#section01 .menu5 .typo2 {
+    left: 802px;
+    top: 64px;
+    position: absolute;
+    width: 167px;
+    height: 15px;
+    overflow: hidden;
+}
+
+/*================= menu5 ON ==============*/
+#section01 .menu5_on {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 1120px;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+}
+#section01 .menu5_on .flow5 {
+    display: flex;
+    left: -1508px;
+    top: 29px;
+    position: absolute;
+}
+#section01 .menu5_on .flow {
+    width: 1448px;
+    height: 50px;
+    left: -170px;
+    top: 29px;
+    margin-right: 60px;
+    animation: flow5 8s linear infinite;
+}
+@keyframes flow5 {
+    100% {
+        transform: translateX(1508px);
+    }
+}
+#section01 .menu5_on .cir_triangle1 {
+    left: 658px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu5_on .cir_triangle2 {
+    left: 1411px;
+    top: 20px;
+    position: absolute;
+}
+#section01 .menu5_on .cir_typo1 {
+    left: 630px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+#section01 .menu5_on .cir_typo2 {
+    left: 1383px;
+    top: -7px;
+    position: absolute;
+    animation: cir_typo 4s linear infinite;
+}
+
+
+
+
+
+
+/* #section02{
+    background: dodgerblue;
+}
+
+#section03{
+    background: gray;
+}
+
+#section04{
+    background: hotpink;
+}
+#section05{
+    background: aqua;
+} */
+
+
+
+
+
+
+
+
+
+
